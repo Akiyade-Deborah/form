@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form Submission</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+  
+            emailjs.init({
+              publicKey: "pNI7_B64IBQ0QQWF3",
+            });
+        })();
+    </script>
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault()
+                emailjs.sendForm('service_nkarnsa', 'template_128p5cn', '#contact-form')
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
+</head>
+
+<body>
+    <div>
+   <form class="form" id="contact-form">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Lastname</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input required="" placeholder="" type="email" class="input">
+        <span>Email</span>
+    </label> 
+    
+    <label>
+        <input required="" placeholder="" type="text" class="input">
+        <span>Username</span>
+    </label>
+        
+    <label>
+        <input required="" placeholder="" type="password" class="input">
+        <span>Password</span>
+    </label>
+
+    <label>
+        <input required="" placeholder="" type="password" class="input">
+        <span>Confirm password</span>
+    </label>
+    
+    <label>
+        <select required="" placeholder="" class="input">
+         <option value="--Select an Option--"></option>
+         <option value="Male" >Male</option>
+         <option value="Female" >Female</option>
+    </select>
+        <span>Gender</span>
+    </label>
+
+    <label>
+        <input placeholder="" rows="5" cols="40" required="" type="textarea" class="input">
+        <span>Bio</span>
+    </label>
+
+    <label>
+        <input required="" placeholder="" type="date" class="input">
+        <span>Date Of Birth</span>
+    </label>
+
+    <label>
+        <input required="" placeholder="" type="tel" class="input">
+        <span>Phone Number</span>
+    </label>
+
+    <label>
+        <input required="" placeholder="" type="number" class="input" min="18" max="35">
+        <span>Age</span>
+    </label>
+
+    <!-- <label>
+        <radio required="" placeholder="" type="radio" class="input">
+        <span type="radio">Marital Status</span>
+    </label> -->
+
+    <label>
+        <input required="" placeholder="" type="file" class="input">
+        <span>Upload File</span>
+    </label>
+
+    <button class="submit">Submit</button>
+    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+</form>
+</div>
+    
+</body>
+</html>
